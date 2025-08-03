@@ -17,11 +17,11 @@ import {Alert} from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export let intervalId = null;
-export const googleMapKey = `AIzaSyClvFffl2Fci_p1ieOXZN2RY-90Ksf_-wI`;
-export const youtubeAPI = `AIzaSyDhYSYpsXM9mRvXS0KanX2emo87D17q1gw`;
+export const googleMapKey = ``;
+export const youtubeAPI = ``;
 export const isStripeLiveMode = false;
-export const stripePubTestKey = `pk_test_51JjeI9KdKonrYzCyGWHmZV4h7cTZZC1A22DoKBqC47R44GozuKJOova4Fr8S4hXer4Soe9d6mDqzkR5NC3jIS3rQ00KZ64ig1v`;
-export const stripeSecTestKey = `sk_test_51JjeI9KdKonrYzCyIyPIS4bEWuhSmwAwY56y9uxzghiCEPMnfs0IjuEFzNzSbVShJUUqI0mUWeL9XYaWrNOCOduR0051ZhqalC`;
+export const stripePubTestKey = ``;
+export const stripeSecTestKey = ``;
 export const startInterval = (setTime = null, interval) => {
     if (setTime) {
         interval = setInterval(setTime, 1000);
@@ -327,15 +327,7 @@ export const imageUploader = async (imgData) => {
         form.append('image', imgData);
 
         const apis = [
-            '9d648e6865615783e0e40567df53a91a',
-            '9469d0d5027b86ad6be1c0a5e8b14836',
-            'f3f4bd051f8c51faa8027040e3cc82d8',
-            '847928557f66be5d4f765e7423717cfc',
-            'e4bd51cfe737c7500b329400a5a2f593',
-            'd57863ac999c4eb3d82c8dbbf46abd9c',
-            'a8ce334d48f8e7740b2f36425d5ff732',
-            '6b9b3c27e85f28c883292be8e4eaed52',
-            '74754f9c4a0d142d4f10eec548927e8a',
+          
         ];
         const apiKey = apis[Math.floor(Math.random() * apis.length)];
 
@@ -371,7 +363,7 @@ export const imageUploader = async (imgData) => {
 };
 
 export const onGetOTP = async (mobile, otp) => {
-    const apiKey = encodeURIComponent('NTI3MjczMzczMzRhNGE0NTM1NzY3ODc1MzE3MjQ2NGQ=');
+    const apiKey = encodeURIComponent('=');
     const numbers = [mobile];
     const sender = encodeURIComponent('24hrs');
     const message = encodeURIComponent(otp);
@@ -485,11 +477,7 @@ export const askGPT3 = async (question) => {
     try {
 
         const apis = [
-            'bb2a705f-d52b-4086-9fa2-2e5f9b4cfc3a',
-            // '536b45d6-6713-454b-90a6-be9edeac3d37',
-            // '792d6ec4-ee02-4dc0-beaa-d2b4b7415e51',
-            // '78122682-2427-491c-95ac-0f86f69c1e1c',
-            // '48978194-6760-4f48-90a4-7c9fd4834d01',
+            // Your API keys
         ]
         const apiKey = apis[Math.floor(Math.random() * apis.length)];
         console.log(apiKey);
@@ -532,7 +520,7 @@ export const askGPT3 = async (question) => {
 
 export const getChatGPTResponse = async (prompt) => {
     try {
-        const apiKey = 'AIzaSyADfMVLG7qIFKXLONy1cIDbhLG3T3-EFV4';
+        const apiKey = '-EFV4';
 
 
         const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=${apiKey}`;
@@ -607,7 +595,7 @@ export const getChatGPTResponse = async (prompt) => {
                  msg: 'Error: Unable to process your request.'
              }
          }*/
-        /*const API_KEY = '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';
+        /*const API_KEY = 'sk-';
         const response = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',
             headers: {
@@ -663,13 +651,13 @@ export const getBibleContent = async (endPoint = 'GetBooks?language=english') =>
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '2867e8bfc2msh5def2f8e1ac6b36p1e9fc8jsn2ce229054ac4',
+                'X-RapidAPI-Key': '',
                 'X-RapidAPI-Host': 'iq-bible.p.rapidapi.com'
             }
         };
         const response = await fetch(url, options);
         return await response.json();
-        /*const apiKey = '6b518cb7208db32239af4ffdcdccb915';
+        /*const apiKey = '';
         const apiUrl = `https://api.scripture.api.bible/v1/bibles${endPoint ? '/' + endPoint : ''}`;
         const headers = {
             'api-key': apiKey,
@@ -714,7 +702,7 @@ export const hash = (data) => {
 
 export const callFunctions = async (obj, functionName, hosting) => {
     try {
-        const baseURl = hosting || `https://us-central1-dhya24hrs.cloudfunctions.net`;
+        const baseURl = hosting || `t`;
         const url = `${baseURl}/${functionName}?data=${JSON.stringify(obj)}`;
         const response = await fetch(url);
         return await response.json();
@@ -843,7 +831,7 @@ export const onErrHandler = (code) => {
 export const jsonApiNet = () => {
     // https://api.jsonstorage.net
     const keys = [
-        '8969a471-87b7-4758-9f34-b090d396d9bb'
+        '8969a471-87b-9f34-b090d396d9bb'
     ];
     return keys[Math.floor(Math.random() * keys.length)];
 }
@@ -998,7 +986,7 @@ export const handleConfirmation = async (title, msg) => {
 
 export const onReadTextUsingAI = async (text: string) => {
     try {
-        const deepgramApiKey = 'b9a9f356187e8962977a0b3f281029469faad6dc';
+        const deepgramApiKey = '';
         const url = 'https://api.deepgram.com/v1/speak?model=aura-asteria-en';
         const data = {
             text
