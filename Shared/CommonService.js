@@ -1034,7 +1034,7 @@ export const generateAudio = async (text) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Token b9a9f356187e8962977a0b3f281029469faad6dc`
+                'Authorization': `Token YOURTOKEN`
             },
             body: JSON.stringify(data)
         });
