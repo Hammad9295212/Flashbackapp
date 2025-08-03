@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "631723956609",
+    "firebase_url": "https://cwebs-custadmin-default-rtdb.firebaseio.com",
+    "project_id": "cwebs-custadmin",
+    "storage_bucket": "cwebs-custadmin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631723956609:android:2bb96b5f3da318540cb080",
+        "android_client_info": {
+          "package_name": "com.hassam009.Flashbackapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631723956609-do6pdhmbkgfum1aopcdi4742dsdc93u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgbyrgqajYaOe6GXHOjEAFZ2qR-Es6mWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631723956609-at87jt6iuatp8otsup54gqg06vb8cv18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

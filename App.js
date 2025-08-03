@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useEffect} from 'react';
+import { initializeApp } from "firebase/app";
+import MainStackNavigator from "./navigation/navigator";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+const App = () => {
+
+    useEffect(() => {
+        console.log(`-----------------------MainStackNavigator--`);
+        const firebaseConfig = {};
+        const app = initializeApp(firebaseConfig);
+        console.log(`-----------------------END--`);
+    }, []);
+
+    return (
+        <MainStackNavigator/>
+    );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
